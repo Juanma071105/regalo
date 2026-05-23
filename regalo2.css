@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  margin: 0;
+  background: #0d1117;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+}
+
+.happy__birthday {
+  padding-top: 60px;
+}
+
+.love-message {
+  font-size: 1.8em;
+  color: #00ff99;
+}
+
+/* Torta de cumpleaños */
+.cake {
+  margin: 20px auto;
+  width: 120px;
+  position: relative;
+}
+
+.cake-body {
+  width: 100%;
+  height: 80px;
+  background: #66bb6a;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.candles {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.candles div {
+  width: 6px;
+  height: 30px;
+  background: white;
+  border-radius: 2px;
+  position: relative;
+}
+
+/* Flamas animadas */
+.flame::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0.6; }
+}
+
+/* Globos */
+.balloons-container {
+  margin-top: 30px;
+}
+
+.balloon {
+  font-size: 2em;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #00ff99;
+  border: 5px solid gold; /* <-- Borde de color */
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.highlight {
+  color: #00ff99;
+}
+
+/* Animación para las flores */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(5deg); 
+  }
+}
+
+.flower {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.flower {
+  font-size: 1.8rem;
+
+
+
+}
+
+
+
+    /* Globos */
+.balloons-container {
+  margin-top: 30px;
+}
+
+.balloon {
+  font-size: 2em;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+
